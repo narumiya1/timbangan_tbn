@@ -1,3 +1,4 @@
+/** 
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:image_picker/image_picker.dart';
@@ -329,6 +330,29 @@ class TimbanganHomeState extends State<TimbanganHome> {
           ),
         ],
       ),
+    );
+  }
+}
+
+**/
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:timbangan_bt/views/tbn_v/home_view.dart';
+
+void main() {
+  runApp(const AppTimbangan());
+}
+
+class AppTimbangan extends StatelessWidget {
+  const AppTimbangan({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      title: 'Timbangan BLE',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const HomeView(),
     );
   }
 }
