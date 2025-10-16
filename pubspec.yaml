@@ -38,7 +38,7 @@ dependencies:
   permission_handler: ^11.3.1
   http: ^1.2.2
   image_picker: ^1.1.2
-  flutter_blue_plus: ^2.0.0
+  flutter_blue_plus: ^1.31.8
   get: ^4.6.6
 
 

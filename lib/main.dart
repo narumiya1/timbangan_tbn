@@ -34,7 +34,7 @@ class TimbanganHome extends StatefulWidget {
 class TimbanganHomeState extends State<TimbanganHome> {
   BluetoothDevice? connectedDevice;
   BluetoothCharacteristic? weightCharacteristic;
-  String weightText = "Belum terkoneksi";
+  String weightText = "Belum terkoneksi ,";
   File? capturedImage;
   StreamSubscription? scanSubscription;
   final ImagePicker _picker = ImagePicker();
@@ -133,7 +133,7 @@ class TimbanganHomeState extends State<TimbanganHome> {
       }
 
       // Jika belum terkoneksi, lakukan connect
-      await device.connect(license: License.free);
+      await device.connect(timeout: const Duration(seconds: 10));
       setState(() => connectedDevice = device);
       addLog("Terkoneksi ke ${device.platformName}");
 
