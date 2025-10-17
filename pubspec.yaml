@@ -40,6 +40,8 @@ dependencies:
   image_picker: ^1.1.2
   flutter_blue_plus: ^1.31.8
   get: ^4.6.6
+  geolocator: ^9.0.2
+  image: ^3.2.2
 
 
 dev_dependencies:
@@ -65,8 +67,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/timbangan.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
